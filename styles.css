@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family:Poppins;
+    background-color: #f6fffa; /* Color de fondo */
+    color: #498553; /* Color de texto */
+    font-size: 13px;
+}
+
+#app {
+    width: 400px;
+    margin: 50px auto;
+    background: #E9F3ED; /* Color de fondo del contenedor */
+    padding: 20px;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #498553; /* Color del encabezado */
+    font-size: 35px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #498553; /* Color de fondo del botón */
+    color: #FFFF; /* Color del texto del botón */
+    border: none;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5f9668; /* Color de fondo del botón al pasar el cursor */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 20px;
+    border-bottom: 1px solid #498553; /* Color del borde de los elementos de la lista */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #c82333; /* Color de fondo del botón de eliminar */
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border: none;
+}
+
+li button:hover {
+    background-color: #d33b4b; /* Color de fondo del botón al pasar el cursor */
+}
+
+.limpiar{
+    background-color: #c82333;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border: none; 
+}
+.limpiar:hover{
+    background-color: #d33b4b; /* Color de fondo del botón al pasar el cursor */
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.8s ease-in-out;
+  }
+
+.tema-btn{
+    margin:20px;
+}
+   
+
+.dark-mode {
+    background-color: #393e46; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+.dark-mode #app {
+    background-color: #222831; /* Color de fondo del contenedor en modo oscuro */
+}
+
+.dark-mode h1{
+    color: #eeee;
+}
+
+.dark-mode button {
+    background-color: #FD7014; /* Color de fondo del botón en modo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+.dark-mode .limpiar{
+    background-color: #c82333;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border: none; 
+}
+
+.dark-mode li button{
+    background-color: #c82333;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    border: none; 
+}   
+
+.dark-mode li{
+    border-bottom: 1px solid #eeee;
+}
